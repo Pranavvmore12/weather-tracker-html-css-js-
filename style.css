@@ -1,4 +1,6 @@
-.main{
+/* Base styles (already defined) */
+
+.main {
     background-image: url(pexels-maumascaro-376533.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,15 +11,15 @@
     align-items: center;
     justify-content: center;
 }
-.black{
-   background-color:black;
+.black {
+    background-color: black;
     width: 100vw;
     height: 100vh;
     position: relative;
     opacity: 0.7;
 }
-.weathercard{
-height: 93vh;
+.weathercard {
+    height: 93vh;
     width: 32vw;
     background-color: rgb(52, 48, 48);
     border: 3px solid rgb(108, 107, 107);
@@ -28,36 +30,32 @@ height: 93vh;
     display: flex;
     justify-content: center;
 }
-#city{
+#city {
     background-color: rgb(54, 54, 54);
     border: 2px solid white;
     color: white;
-
 }
-#city:hover{
+#city:hover {
     background-color: gray;
 }
-
-#citybutton{
+#citybutton {
     border: 2px solid white;
     color: white;
     padding-left: 0.7vw;
     padding-right: 0.5vw;
 }
-.icon{
+.icon {
     width: 100%;
-    justify-content:center;
+    justify-content: center;
     display: flex;
-    
 }
-.icon>img{
+.icon > img {
     position: absolute;
     top: 13vh;
     opacity: 1;
     margin-top: 0.4vw;
-    
 }
-.temp{
+.temp {
     position: relative;
     color: white;
     text-align: center;
@@ -67,17 +65,15 @@ height: 93vh;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    width: 100% ;
+    width: 100%;
     height: 100%;
     align-items: center;
-
 }
-.finalcity{
+.finalcity {
     font-weight: 400;
     font-size: 4.7vh;
-
 }
-.chars{
+.chars {
     font-size: 3vh;
     font-weight: 200;
     display: flex;
@@ -87,16 +83,92 @@ height: 93vh;
     width: 28vw;
     text-align: center;
     max-height: fit-content;
-
 }
-.humidity{
+.humidity {
     text-align: center;
-
 }
-.windspeed{
+.windspeed {
     display: flex;
     flex-direction: column;
-   gap: 1vw;
-   margin-top: 3.1vh;
+    gap: 1vw;
+    margin-top: 3.1vh;
+}
 
+@media (max-width: 1024px) {
+    .weathercard {
+        width: 45vw;
+        height: 90vh;
+    }
+    .temp {
+        font-size: 5vh;
+    }
+    .finalcity {
+        font-size: 4vh;
+    }
+    .chars {
+        font-size: 2.5vh;
+        gap: 4vw;
+        width: 80%;
+    }
+    .icon > img {
+        top: 12vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .weathercard {
+        width: 70vw;
+        height: 85vh;
+    }
+    .temp {
+        font-size: 4.5vh;
+    }
+    .finalcity {
+        font-size: 3.5vh;
+    }
+    .chars {
+        font-size: 2vh;
+        gap: 2vw;
+        width: 90%;
+    }
+    .icon > img {
+        top: 10vh;
+        height: 12vh;
+    }
+    #city {
+        width: 80%;
+    }
+    #citybutton {
+        width: 15%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .weathercard {
+        width: 90vw;
+        height: 80vh;
+    }
+    .temp {
+        font-size: 4vh;
+    }
+    .finalcity {
+        font-size: 3vh;
+    }
+    .chars {
+        font-size: 1.8vh;
+        gap: 1.5vw;
+        width: 95%;
+    }
+    .icon > img {
+        top: 8vh;
+        height: 10vh;
+    }
+    #city {
+        width: 70%;
+    }
+    #citybutton {
+        width: 20%;
+        padding: 0;
+    }
 }
