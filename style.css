@@ -1,0 +1,102 @@
+.main{
+    background-image: url(pexels-maumascaro-376533.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.black{
+   background-color:black;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    opacity: 0.7;
+}
+.weathercard{
+height: 93vh;
+    width: 32vw;
+    background-color: rgb(52, 48, 48);
+    border: 3px solid rgb(108, 107, 107);
+    z-index: 10;
+    position: absolute;
+    opacity: 0.7;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+#city{
+    background-color: rgb(54, 54, 54);
+    border: 2px solid white;
+    color: white;
+
+}
+#city:hover{
+    background-color: gray;
+}
+
+#citybutton{
+    border: 2px solid white;
+    color: white;
+    padding-left: 0.7vw;
+    padding-right: 0.5vw;
+}
+.icon{
+    width: 100%;
+    justify-content:center;
+    display: flex;
+    
+}
+.icon>img{
+    position: absolute;
+    top: 13vh;
+    opacity: 1;
+    margin-top: 0.4vw;
+    
+}
+.temp{
+    position: relative;
+    color: white;
+    text-align: center;
+    bottom: 3vh;
+    font-size: 6vh;
+    font-weight: 500;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100% ;
+    height: 100%;
+    align-items: center;
+
+}
+.finalcity{
+    font-weight: 400;
+    font-size: 4.7vh;
+
+}
+.chars{
+    font-size: 3vh;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+    margin-top: 3vw;
+    width: 28vw;
+    text-align: center;
+    max-height: fit-content;
+
+}
+.humidity{
+    text-align: center;
+
+}
+.windspeed{
+    display: flex;
+    flex-direction: column;
+   gap: 1vw;
+   margin-top: 3.1vh;
+
+}
